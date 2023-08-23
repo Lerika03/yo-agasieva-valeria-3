@@ -1,8 +1,9 @@
-let num = prompt("Введи число")
-let degree = prompt("Введи степень") {
-        for (let num = 1; i < b; i++) {
-          result *= a;
-        }
-        console.log()
-}
+let num=prompt("Введите число", ""),
 
+degree=prompt("Введите степень","");
+let result=1;
+
+for (i=1; i<=degree; i++){
+result*=num;
+}
+console.log("Число в степени "+result);
