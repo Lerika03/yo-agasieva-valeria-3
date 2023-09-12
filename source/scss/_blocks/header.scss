@@ -1,0 +1,43 @@
+.header {
+    max-width: 1000px;
+    border-bottom: 1px solid #828282;
+    padding: 33px 0px 17px;
+    @media screen and (max-width:768px) {
+        padding: 35px 0px 30px 0px;
+        max-width: 648px;
+    }
+    &__logo {
+        font-family: $GilMedium;
+        font-size: 18px;
+        font-weight: 700;
+        color: #000;
+        margin-left: 10px;
+        @media screen and (max-width:768px) {
+            margin-left: 0;
+        }
+        &:hover{
+            color:#828282;
+        }
+    }
+    &__list{
+        display: flex;
+        justify-content: end;
+        margin-top: -23px;
+        &-item{
+            margin-right: 5px;
+        }
+            &-btn {
+                border: none;
+                background-color: #fff;
+                color: #828282;
+                font-family: $GilBold;
+                font-size: 18px;
+                font-weight: 400;
+                font-style: normal;
+                &:hover{
+                    color:#070707;
+                }
+            }
+    }
+}
+
