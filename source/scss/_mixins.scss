@@ -1,3 +1,16 @@
 @mixin hoverslov {
   transition: opacity 0.4s;
 }
+
+@mixin bacroundgrey {
+  background-color: #F6F6F6;
+  height: 618px;
+}
+
+@mixin titleh2 {
+  text-align: center;
+  font-family: $GilBold;
+  font-size: 34px;
+  font-weight: 700;
+  padding-top: 60px;
+}

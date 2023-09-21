@@ -29,31 +29,30 @@
             <li class="slider__list-items"><h1 class="slider__list-name">Agasieva Valeria</h1></li>
             <li class="slider__list-items"><p class="slider__list-aboutme">front-end developer 34 years old, Tolyatti</p></li>
           </ul>
-          <img class="slider__img" src="../img/slider.jpg" alt="slider foto" class="slider__img" width="1000" height="465">
-          <div class="slider__nav">
-            <ul class="slider__nav-list">
-              <li class="slider__nav-items"><svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42" fill="none">
+          <div class="slider__wrapper">
+            <div class="slider__inner-wrapper">
+              <div class="slider_slide"><img class="slider__img" src="../img/slider.jpg" alt="slider foto" class="slider__img"></div>
+              <div class="slider_slide"><img class="slider__img" src="../img/slider2.jpg" alt="slider foto" class="slider__img"></div>
+              <div class="slider_slide"><img class="slider__img" src="../img/slider3.jpg" alt="slider foto" class="slider__img"></div>
+              <div class="slider_slide"><img class="slider__img" src="../img/slider4.jpg" alt="slider foto" class="slider__img"></div>
+            </div>
+          </div>         
+            <div class="slider__bottom-panel">
+              <button class="slider__button slider__button_back"><svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42" fill="none">
                 <rect x="40.75" y="40.75" width="39.5" height="39.5" rx="19.75" transform="rotate(-180 40.75 40.75)" stroke="#070707" stroke-width="2.5"/>
                 <rect x="24.5791" y="32.6992" width="16.5512" height="3" rx="1.5" transform="rotate(-135 24.5791 32.6992)" fill="#070707"/>
                 <rect x="26.7002" y="11.4199" width="16.5512" height="3" rx="1.5" transform="rotate(135 26.7002 11.4199)" fill="#070707"/>
-                </svg></li>
-              <li class="slider__nav-items">
-                <svg xmlns="http://www.w3.org/2000/svg" width="61" height="10" viewBox="0 0 61 10" fill="none">
-                <circle cx="22" cy="5.00006" r="5" fill="#E5E5E5"/>
-                <circle cx="39" cy="5.00006" r="5" fill="#E5E5E5"/>
-                <circle cx="56" cy="5.00006" r="5" fill="#E5E5E5"/>
-                <circle cx="5" cy="5.00006" r="5" fill="#070707"/>
-                </svg></li>
-              <li class="slider__nav-items"><svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42" fill="none">
+                </svg></button>
+              <div class="slider__pagination"></div>
+              <button class="slider__button slider__button_next"><svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42" fill="none">
                 <rect x="1.25" y="1.25006" width="39.5" height="39.5" rx="19.75" stroke="#070707" stroke-width="2.5"/>
                 <rect x="17.4209" y="9.30084" width="16.5512" height="3" rx="1.5" transform="rotate(45 17.4209 9.30084)" fill="#070707"/>
                 <rect x="15.2998" y="30.5801" width="16.5512" height="3" rx="1.5" transform="rotate(-45 15.2998 30.5801)" fill="#070707"/>
-                </svg></li>
-            </ul>
-          </div>
+                </svg></button>
+            </div>
         </section>
         <section class="information">
-          <div class="information__chat container">
+          <article class="information__chat container">
             <h2 class="information__chat-title">About me</h2>
               <div class="information__chat-contanier">
                 <div class="information__chat-left"><svg xmlns="http://www.w3.org/2000/svg" width="482" height="139" viewBox="0 0 482 139" fill="none">
@@ -66,17 +65,78 @@
                     <path d="M480 2H2V96H416L436 116L456 96H480V2Z" stroke="#070707" stroke-width="2.5"/>
                     </svg><p class="information__chat-text3">Quam ipsum odio tellus etiam aliquam dolor ut hendrerit. Felis risus nec vitae nunc ultricies placerat. Nullam nec felis eu id dolor pellentesque tristique. </p></div>
               </div>
-          </div>
+          </article>
         </section>
         <section class="skills container">
           <h2 class="skills__title">Skills</h2>
-          p.s
+          <p class="skills__text">I work in such programs as</p>
+          <ul class="skills__list">
+            <li class="skills__list-logo"><svg xmlns="http://www.w3.org/2000/svg" width="79" height="90" viewBox="0 0 79 90" fill="none">
+              <path d="M0 0L7.19464 81L39.5 90L71.7941 81.0056L79 0H0Z" fill="#FF5722"/>
+              <path d="M63.3977 26.4888H39.5002H25.5342L26.437 36.6644H39.5002H62.4949L59.7807 67.1744L39.5002 72.8163L39.4833 72.8219L19.2142 67.1744L17.7978 51.2163H27.7292L28.4684 59.4963L39.4889 62.4832L39.5002 62.4775L50.532 59.4907L51.6832 46.6038H39.5002H17.3915L14.7168 16.5607H39.5002H64.278L63.3977 26.4888Z" fill="#FAFAFA"/>
+              </svg><p class="skills__text-logo">HTML 5</p></li>
+            <li class="skills__list-logo"><svg xmlns="http://www.w3.org/2000/svg" width="79" height="90" viewBox="0 0 79 90" fill="none">
+              <path d="M0 0L7.19464 81L39.5 90L71.7941 81.0056L79 0H0Z" fill="#2196F3"/>
+              <path d="M63.6174 26.4887L62.7089 36.6643L59.9665 67.1687L39.4999 72.8105L39.4829 72.8162L19.0276 67.1687L17.5999 51.2162H27.6217L28.3665 59.4905L39.4886 62.483L39.4942 62.4774L50.6332 59.4849L52.1511 45.698L17.1203 45.7937L16.1272 36.3662L52.9919 35.933L53.7368 25.8418L15.1397 25.9487L14.4907 16.5605H39.4999H64.509L63.6174 26.4887Z" fill="#FAFAFA"/>
+              </svg><p class="skills__text-logo">CSS/SCSS</p></li>
+            <li class="skills__list-logo"><svg xmlns="http://www.w3.org/2000/svg" width="68" height="90" viewBox="0 0 68 90" fill="none">
+              <path d="M64.0722 90H3.92785C1.7586 90 0 88.2298 0 86.0463V3.9537C0 1.77017 1.7586 0 3.92785 0H51.5703L67.9993 15.7242V86.0463C68 88.2298 66.2414 90 64.0722 90Z" fill="#F4F4F4"/>
+              <path d="M51.5706 0H44.5068L60.9359 15.7242V86.0463C60.9359 88.2298 59.178 90 57.008 90H64.0717C66.241 90 67.9996 88.2298 67.9996 86.0463V15.7242L51.5706 0Z" fill="#E8E8E8"/>
+              <path d="M60.9356 8.96347L51.5703 0H3.92785C1.7586 0 0 1.77017 0 3.9537V8.96347H60.9356Z" fill="#F6D867"/>
+              <path d="M46.4131 8.96347H60.9355L51.5702 0H46.4131V8.96347Z" fill="#E0C55E"/>
+              <path d="M51.5703 0V11.7705C51.5703 13.954 53.3289 15.7242 55.4982 15.7242H68L51.5703 0Z" fill="#DEDCDD"/>
+              <path d="M0 64.9559V86.0462C0 88.2298 1.7586 90 3.92785 90H64.0721C66.2414 90 68 88.2298 68 86.0462V64.9559H0Z" fill="#F6D867"/>
+              <path d="M60.9357 86.0454C60.9357 88.2289 59.1777 89.9991 57.0078 89.9991H64.0715C66.2381 89.9991 67.9994 88.2324 67.9994 86.0454V64.9551H60.9357V86.0454Z" fill="#E0C55E"/>
+              <path d="M27.9669 83.6761C30.4916 83.6761 32.538 81.656 32.538 79.1628V72.5442C32.538 71.9475 32.0578 71.4641 31.4657 71.4641C30.8736 71.4641 30.3933 71.9475 30.3933 72.5442V79.1628C30.3933 81.9478 26.4409 82.5809 25.6462 79.822C25.5173 79.3736 25.1073 79.0461 24.6202 79.0461C23.904 79.0461 23.393 79.7471 23.597 80.4351C24.1611 82.3392 25.9109 83.6761 27.9669 83.6761Z" fill="#495663"/>
+              <path d="M39.6787 81.6053C38.5041 81.6053 37.3505 81.1673 36.3293 80.6454C35.639 80.2911 34.8218 80.7992 34.8218 81.5772C34.8218 81.9693 35.0373 82.3119 35.3552 82.4911C39.3608 84.7282 44.4436 83.6721 44.4436 80.0659C44.4436 77.3935 41.8412 76.8448 39.6078 76.4376C38.1289 76.1678 37.1288 76.0305 37.1241 75.0499C37.1206 74.2253 37.8321 73.358 39.6255 73.358C41.6979 73.358 42.6468 74.3743 43.2921 74.3743C44.3583 74.3743 44.726 72.9275 43.7778 72.4187C39.0218 69.8658 34.9841 71.9854 34.9794 75.1399C34.9746 78.0128 37.7796 78.4378 39.6078 78.7386C41.2968 79.016 42.2982 79.1986 42.3057 80.1352C42.3173 81.3753 40.5226 81.6053 39.6787 81.6053Z" fill="#495663"/>
+              </svg><p class="skills__text-logo">JavaScript</p></li>
+            <li class="skills__list-logo"><img src="./img/git.png" alt=""><p class="skills__text-logo">Git/GitHub</p></li>
+            <li class="skills__list-logo"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="90" viewBox="0 0 60 90" fill="none">
+              <path d="M14.9954 90.0008C23.275 90.0008 29.9907 83.2858 29.9907 75.007V60.0132H14.9954C6.71572 60.0132 0 66.7282 0 75.007C0 83.2858 6.71572 90.0008 14.9954 90.0008Z" fill="#0ACF83"/>
+              <path d="M0 45.0014C0 36.7226 6.71572 30.0076 14.9954 30.0076H29.9907V60.0135H14.9954C6.71572 59.9951 0 53.2801 0 45.0014Z" fill="#A259FF"/>
+              <path d="M0 14.9938C0 6.71501 6.71572 0 14.9954 0H29.9907V30.006H14.9954C6.71572 30.006 0 23.2726 0 14.9938Z" fill="#F24E1E"/>
+              <path d="M30.0093 0H45.0046C53.2843 0 60 6.71501 60 14.9938C60 23.2726 53.2843 29.9876 45.0046 29.9876H30.0093V0Z" fill="#FF7262"/>
+              <path d="M60 45.0014C60 53.2801 53.2843 59.9951 45.0047 59.9951C36.725 59.9951 30.0093 53.2801 30.0093 45.0014C30.0093 36.7226 36.725 30.0076 45.0047 30.0076C53.2843 30.0076 60 36.7226 60 45.0014Z" fill="#1ABCFE"/>
+              </svg><p class="skills__text-logo">Figma</p></li>
+          </ul>
+          <ul class="skills__list">
+            <li class="skills__items-knows"><p>85%</p></li>
+            <li class="skills__items-knows"><svg xmlns="http://www.w3.org/2000/svg" width="142" height="9" viewBox="0 0 142 9" fill="none">
+              <rect width="142" height="9" fill="#E5E5E5"/>
+              <rect width="121" height="9" fill="#070707"/>
+              </svg></li>
+            <li class="skills__items-knows"><p>55%</p></li>
+            <li class="skills__items-knows"><svg xmlns="http://www.w3.org/2000/svg" width="142" height="9" viewBox="0 0 142 9" fill="none">
+              <rect width="142" height="9" fill="#E5E5E5"/>
+              <rect width="71" height="9" fill="#070707"/>
+              </svg></li>
+            <li class="skills__items-knows">5%</li>
+            <li class="skills__items-knows"><svg xmlns="http://www.w3.org/2000/svg" width="142" height="9" viewBox="0 0 142 9" fill="none">
+              <rect width="142" height="9" fill="#E5E5E5"/>
+              <rect width="15" height="9" fill="#070707"/>
+              </svg></li>
+            <li class="skills__items-knows"><p>15%</p></li>
+            <li class="skills__items-knows"><svg xmlns="http://www.w3.org/2000/svg" width="142" height="9" viewBox="0 0 142 9" fill="none">
+              <rect width="142" height="9" fill="#E5E5E5"/>
+              <rect width="18" height="9" fill="#070707"/>
+              </svg></li>
+            <li class="skills__items-knows">80%</li>
+            <li class="skills__items-knows"><svg xmlns="http://www.w3.org/2000/svg" width="142" height="9" viewBox="0 0 142 9" fill="none">
+              <rect width="142" height="9" fill="#E5E5E5"/>
+              <rect width="113.6" height="9" fill="#070707"/>
+              </svg></li>
+          </ul>
+        </section>
+        <section class="portfolio">
+          <article class="container">
+            <h2 class="portfolio__title"></h2>
+          </article>
         </section>
       </main>
 
       @@include('blocks/footer.html')
     </div>
-
+    <script src="js/slider.js"></script>
     <script src="js/app.js" defer></script>
   </body>
 </html>

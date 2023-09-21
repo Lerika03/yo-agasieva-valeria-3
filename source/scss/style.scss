@@ -65,19 +65,85 @@
       margin-bottom: 60px;
     }
   }
+  &__wrapper {
+    height: 465px;
+    overflow: hidden;
+  }
+  
+  &__inner-wrapper {
+    display: flex;
+    height: 100%;
+  }
+
+  &_slide {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #fff;
+    }
+  
+  &__bottom-panel {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  &__dot {
+    width: 10px;
+    height: 10px;
+    border: none;
+    padding: 0;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    transition: background-color .4s;
+    background: #E5E5E5;
+    
+    &:not(:last-child) {
+      margin-right: 5px;
+    }
+    
+    &_active {
+      background-color: #000;
+    }
+    
+    &:not(.slider__dot_active):hover, &:not(.slider__dot_active):focus {
+      background-color: gray;
+    }
+  }
+  
+  &__button {
+    background-color: transparent;
+    font-size: 20px;
+    outline: none;
+    transition: all .5s;
+    
+    &:not(:disabled) {
+        &:hover, &:focus {
+        cursor: pointer;
+        color: #fff;
+      }
+    }
+    
+    &:disabled {
+      opacity: .4;
+      pointer-event: none;
+      user-select: none;
+    }
+  }
 }
+
 
 .information {
   background-color: #F6F6F6;
   height: 618px;
   &__chat {
     &-title{
-      text-align: center;
-      font-family: $GilBold;
-      font-size: 34px;
-      font-weight: 700;
+      @include titleh2;
       margin-bottom: 51px;
-      padding-top: 60px;
     }
     &-contanier {
       display: flex;
@@ -112,12 +178,11 @@
 }
 .skills {
   &__title {
-    color: #070707;
-    text-align: center;
-    font-family: $GilBold;
-    font-size: 34px;
-    font-weight: 700;
-    margin-top: 60px;
+    @include titleh2;
+  }
+  &__list {
+    display: flex;
+    gap: 25px;
   }
 }
 

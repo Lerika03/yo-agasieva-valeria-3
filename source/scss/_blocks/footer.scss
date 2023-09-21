@@ -1,6 +1,39 @@
-/*
-  Код ниже нужно удалить, он добавлен просто для примера
-*/
-// .footer {
+.footer {
+    &__title{
+      @include titleh2;
+      margin-bottom: 20px;
+    }
+    &__text {
+      color: var(--Black, #070707);
+        text-align: center;
+        font-family: $GilMedium;
+        font-size: 18px;
+        font-weight: 500;
+        padding: 0px 371px;
+        margin-bottom: 30px;
+    }
+    &__message {
+      border-radius: 30px;
+      background: #070707;
+      color: #FFF;
+      text-align: center;
+      font-family: $GilMedium;
+      font-size: 18px;
+      font-weight: 400;
+      display: inline-flex;
+      padding: 10px 29px;
+      align-items: center;
+    }
+    &__list {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      &-link {
+        border-radius: 30px;
+        border: 2.5px solid #070707;
+        color: #070707;
+        padding: 10px 19px;
+      }
+    }
 
-// }
+}
