@@ -1,4 +1,7 @@
 .footer {
+  &__container {
+    padding: 0 561px;
+  }
     &__title{
       @include titleh2;
       margin-bottom: 20px;
@@ -9,25 +12,25 @@
         font-family: $GilMedium;
         font-size: 18px;
         font-weight: 500;
-        padding: 0px 371px;
         margin-bottom: 30px;
     }
     &__message {
       border-radius: 30px;
       background: #070707;
       color: #FFF;
-      text-align: center;
       font-family: $GilMedium;
       font-size: 18px;
       font-weight: 400;
-      display: inline-flex;
       padding: 10px 29px;
-      align-items: center;
+      margin: 10px 40px 30px 75px;
     }
     &__list {
       display: flex;
-      flex-direction: column;
-      gap: 32px;
+      flex-wrap: wrap;
+      justify-content: center;
+      row-gap: 34px;
+      column-gap: 10px;
+      margin: 40px 0px 40px 0px;
       &-link {
         border-radius: 30px;
         border: 2.5px solid #070707;
@@ -35,5 +38,5 @@
         padding: 10px 19px;
       }
     }
-
 }
+

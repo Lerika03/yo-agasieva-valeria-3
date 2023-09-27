@@ -45,6 +45,7 @@
         font-family: $GilBold;
         font-size: 47px;
         max-width: 280px;
+        margin: 0px;
       }
       &-aboutme{
         font-family: $GilMedium;
@@ -52,19 +53,10 @@
         font-style: normal;
         font-weight: 400;
         line-height: normal;
+        max-width: 58%;
       }      
   }
-  &__img{
-    margin-bottom: 30px;
-  }
-  &__nav{
-    &-list{
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 60px;
-    }
-  }
+
   &__wrapper {
     height: 465px;
     overflow: hidden;
@@ -89,6 +81,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 60px;
   }
   
   &__dot {
@@ -130,7 +123,6 @@
     
     &:disabled {
       opacity: .4;
-      pointer-event: none;
       user-select: none;
     }
   }
@@ -179,10 +171,45 @@
 .skills {
   &__title {
     @include titleh2;
+    margin-bottom: 20px;
+  }
+  &__text {
+    text-align: center;
+    margin-bottom: 50px;
   }
   &__list {
+    max-width: 1000px;
     display: flex;
-    gap: 25px;
+    gap: 71px;
+    justify-content: space-evenly;
+  }
+  &__logo {
+    margin-bottom: 20px;
+      &_text {
+        text-align: center;
+        margin-bottom: 24px;
+      }
+  }
+  &__diagram {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 64px;
+      &-knows {
+        display: flex;
+        align-items: center;
+      }
+      &-text {
+        margin-right: 12px;
+      }
+  }
+}
+
+.portfolio {
+  background-color: #F6F6F6;
+  height: 816px;
+  &__title {
+    @include titleh2;
+    margin-bottom: 50px;
   }
 }
 
