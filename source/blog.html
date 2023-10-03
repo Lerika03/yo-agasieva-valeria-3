@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+
+    <title>DL Academy</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <script>
+      var docElement = document.documentElement;
+      docElement.className = docElement.className.replace(/\bno-js\b/, '') + ' js';
+    </script>
+
+    <!-- Favicon -->
+
+    <!-- build:css -->
+    <link href="css/style.min.css" rel="stylesheet">
+    <!-- endbuild -->
+  </head>
+  <body>
+    @@include('blocks/header.html')
+    <section class="blog container">
+        <h1 class="blog__title">My blog</h1>
+        <div class="blog__filtres">
+        <form action="filtres-blog" class="blog__filtres-form">
+            <div class="blog__filtres_contanier-tags">
+                <fieldset class="blog__filtres-color"> 
+                    <legend class="blog__filtres_title-color">Tags</legend>
+                    <ul class="blog__filtres_color-list">
+                        
+                    </ul>
+                </fieldset> 
+            </div>
+            <div class="blog__filtres">
+                <fieldset class="blog__filtres_contanier-views">
+                    <legend class="blog__filtres_title-views">Views</legend>
+                    <ul class="blog__filtres-list">
+                        <li class="blog__filtres-item"><input class="blog__filtres-views visualli__hidden" name="filtres-views" type="radio" i100-500>
+                            <label class="blog__filtres-lable" for="100-500">100-500</label></li>
+                        <li class="blog__filtres-item"><input class="blog__filtres-views visualli__hidden" name="filtres-views" type="radio" id="500-1000">
+                            <label class="blog__filtres-lable" for="500-1000">500-1000</label></li>
+                            <li class="blog__filtres-item"><input class="blog__filtres-views visualli__hidden" name="filtres-views" type="radio" id="thousand">
+                                <label class="blog__filtres-lable" for="thousand">1000-2000</label></li>
+                    </ul>
+                </fieldset>
+            </div>
+            <div class="blog__filtres_contanier-comments">
+                <fieldset class="blog__filtres-comments"> 
+                    <legend class="blog__filtres_title-color">Comments</legend>
+                    <ul class="blog__filtres_comments-list">
+                        <li class="blog__filtres_comments-items"><input class="color__ceckbox visualli__hidden" type="checkbox" id="0">
+                            <label class="color__lable" for="0">0</label></li>
+                        <li class="blog__filtres_color-items"><input class="color__ceckbox visualli__hidden" type="checkbox" id="01">
+                            <label class="color__lable" for="01">0-1</label></li>
+                        <li class="blog__filtres_color-items"><input class="color__ceckbox visualli__hidden" type="checkbox" id="150">
+                            <label class="color__lable" for="150">1-50</label></li>
+                    </ul>
+                </fieldset> 
+            </div>
+            <div class="blog__filtres">
+                <fieldset class="blog__filtres_contanier-views">
+                    <legend class="blog__filtres_title-views">How show?</legend>
+                    <ul class="blog__filtres-list">
+                        <li class="blog__filtres-item"><input class="blog__filtres-views visualli__hidden" name="filtres-views" type="radio" id="five">
+                            <label class="blog__filtres-lable" for="five">show 5</label></li>
+                        <li class="blog__filtres-item"><input class="blog__filtres-views visualli__hidden" name="filtres-views" type="radio" id="ten">
+                            <label class="blog__filtres-lable" for="ten">show 10</label></li>
+                    </ul>
+                </fieldset>
+            </div>
+            <div class="blog__filtres">
+                <fieldset class="blog__filtres_contanier-views">
+                    <legend class="blog__filtres_title-views">Sort by</legend>
+                    <ul class="blog__filtres-list">
+                        <li class="blog__filtres-item"><input class="blog__filtres-views visualli__hidden" name="filtres-views" type="radio" id="date">
+                            <label class="blog__filtres-lable" for="date">date</label></li>
+                        <li class="blog__filtres-item"><input class="blog__filtres-views visualli__hidden" name="filtres-views" type="radio" id="title">
+                            <label class="blog__filtres-lable" for="title">title</label></li>
+                        <li class="blog__filtres-item"><input class="blog__filtres-views visualli__hidden" name="filtres-views" type="radio" id="views">
+                            <label class="blog__filtres-lable" for="views">views</label></li>
+                    </ul>
+                </fieldset>
+            </div>
+            <div class="filtres-btn">
+                <button class="filters__reset-btn filters__reset_btn-js">reset</button>
+                <button class="filters__search-btn filters__search_btn-js">search</button>
+            </div>
+                <input class="filtres-search" type="text">
+        </form>
+    </div>
+        
+    </section>
+    @@include('blocks/footer.html')
+    <script src="./js/chekbox.js"></script>
+  </body> 
+  </html>

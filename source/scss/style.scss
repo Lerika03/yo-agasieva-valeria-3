@@ -18,6 +18,7 @@
 @import "_blocks/container";
 @import "_blocks/footer";
 @import "_blocks/header.scss";
+@import "blog.scss";
 
 /*
   Ниже пример подключения других блоков
@@ -40,7 +41,12 @@
   &__list {
     display: flex;
     margin-bottom: 36px;
+    margin-top: 40px;
     padding: 0;
+      &-items {
+        display: flex;
+        align-items: flex-end;
+      }
       &-name{
         font-family: $GilBold;
         font-size: 47px;

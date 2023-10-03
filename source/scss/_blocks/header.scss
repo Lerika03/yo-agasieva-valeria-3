@@ -23,8 +23,9 @@
         display: flex;
         justify-content: end;
         margin-top: -23px;
-        &-item{
-            margin-right: 5px;
+        gap: 20px;
+        &-item {
+            display: flex;
         }
             &-btn {
                 border: none;

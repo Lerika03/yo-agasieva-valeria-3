@@ -4,9 +4,11 @@ html {
   -webkit-tap-highlight-color: transparent;
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
+  outline: none;
+  border: none;
 }
 
 *,
@@ -46,4 +48,12 @@ button {
   outline: 0;
   outline-offset: 0;
   @include hoverslov;
+}
+
+.visualli__hidden {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
 }
